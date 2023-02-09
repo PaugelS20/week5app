@@ -1,24 +1,24 @@
 import React from 'react'
 
-export const Greeting = (props) => {
+export const Greeting = ({name, favoriteNumber, favoriteColors}) => {
   return (
     <>
         <h2>
-            Hello {props.name}!!!
+            Hello {name}!!!
         </h2>
     
         <h3>
-            {props.name}'s favorite number is {props.favoriteNumber}
+            {name}'s favorite number is {favoriteNumber}
         </h3>
     
         <h3>
-            {props.name}'s favorite number plus 10 is { props.favoriteNumber + 10 }
+            {name}'s favorite number plus 10 is { favoriteNumber + 10 }
         </h3>
 
         <h3>
-            {props.name}'s favorite colors are: 
+            {name}'s favorite colors are: 
             <ul>
-                {props.favoriteColors && props.favoriteColors.map(color => <li key={color} >{ color }</li>)}
+                {favoriteColors && favoriteColors.map(color => <li key={color} >{ color }</li>)}
             </ul>
         </h3>
     </>
