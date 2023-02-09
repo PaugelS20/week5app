@@ -3,7 +3,13 @@ import { Greeting } from './Greeting';
 
 const App = () => {
   return (
-   <Greeting name="Sam" favoriteNumber={100}/>
+  <>
+      <Greeting name="React"/>
+      <Greeting name="Sam" favoriteNumber={100}/>
+      <Greeting name="Matt" favoriteNumber={27}/>
+      <Greeting name="Amy" favoriteNumber={45}/>
+  </>
+
   );
 }
 

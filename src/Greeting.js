@@ -1,19 +1,25 @@
 import React from 'react'
 
-export const Greeting = ({ name, favoriteNumber }) => {
+export const Greeting = ({ props }) => {
   return (
     <>
     <h1>
-        Hello React!!!
+        Hello {props.name}!!!
     </h1>
     <h2>
-        Hello {name}!!!
+        Hello {props.name}!!!
     </h2>
     <h2>
-        {name}'s favorite number is {favoriteNumber}
+        {props.name}'s favorite number is {props.favoriteNumber}
     </h2>
     <h2>
-        Hello Amy
+        {props.name}'s favorite number plus 10 is {}
+    </h2>
+    <h2>
+        {props.name}'s favorite colors are {props.favoriteColors}
+    </h2>
+    <h2>
+        Hello {props.name}!!!
     </h2>
     </>
   );
